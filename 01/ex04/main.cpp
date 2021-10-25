@@ -19,7 +19,7 @@ void check_arguments(int argc, char **argv)
 
 std::string replace_s1_with_s2(std::string buffer, char **argv)
 {
-	size_t pos;
+	size_t pos = 0;
 	std::string s1 (argv[2]);
 	std::string s2 (argv[3]);
     while((pos = buffer.find(s1, pos)) != std::string::npos)	//It actually means until the end of the string
